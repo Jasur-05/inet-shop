@@ -1,0 +1,43 @@
+@import './fonts.scss', './common/authLayout.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'OpenSans';
+}
+
+input, textarea, button {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    background: transparent;
+}
+
+button {
+    cursor: pointer;
+    
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+.container {
+    padding: 40px 60px 40px 64px;
+    flex-grow: 1;
+}

@@ -1,0 +1,53 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 30px 25px 30px 30px;
+    max-width: 240px;
+    width: 100%;
+    border-right: 1px solid #D4D6E0;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #FE724C;
+        border-radius: 3px;
+    }
+
+    &__img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 8px 40px 0 rgba(255, 197, 41, 0.25);
+    }
+
+    &__name {
+        font-size: 20px;
+        margin-top: 21px;
+        margin-bottom: 7px;
+    }
+
+    &__email {
+        font-size: 14px;
+        color: #9EA1B1;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__link {
+        gap: 14px;
+        display: flex;
+        align-items: center;
+    }
+}
